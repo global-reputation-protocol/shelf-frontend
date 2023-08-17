@@ -17,6 +17,10 @@ h1.head-line {
   line-height: 1;
 }
 
+.catalog {
+  width: 36%
+}
+
 .equipped-position-0 {
   position: absolute;
   left: 270px;
