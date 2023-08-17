@@ -1,4 +1,5 @@
 const itemDictionary = { 
+  "shelf":  {"name":"TheShelf","external_url":"https://shelf-frontend-shelf.vercel.app/","description":"TheShelf composable NFT.","image":"https://shelf-frontend-shelf.vercel.app/shelf.svg","attributes":{"Collection":"Shelf"}},
   "item-1": {"name":"AAVE 01","external_url":"https://shelf-frontend-shelf.vercel.app/","description":"Governance engagement badge 01.","image":"https://shelf-frontend-shelf.vercel.app/items/aave1.svg","attributes":{"Collection":"AAVE Governance"}},
   "item-2": {"name":"AAVE 02","external_url":"https://shelf-frontend-shelf.vercel.app/","description":"Governance engagement badge 02.","image":"https://shelf-frontend-shelf.vercel.app/items/aave2.svg","attributes":{"Collection":"AAVE Governance"}},
   "item-3": {"name":"AAVE 03 GHO","external_url":"https://shelf-frontend-shelf.vercel.app/","description":"GHO contributor badge.","image":"https://shelf-frontend-shelf.vercel.app/items/aave3.svg","attributes":{"Collection":"AAVE Governance"}},
