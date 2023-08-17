@@ -23,12 +23,17 @@ const wagmiConfig = createConfig({
   publicClient,
 });
 
+const themeVariables = {
+  "--w3m-font-family": "Roboto, sans-serif",
+  "--w3m-accent-color": "#D33C23"
+};
+
 const ethereumClient = new EthereumClient(wagmiConfig, chains);
 const WagmiProvider = ({ children }: WagmiProviderType) => {
   return (
     <>
       <WagmiConfig config={wagmiConfig}>{children}</WagmiConfig>
-      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} themeVariables={themeVariables} />
     </>
   );
 };
