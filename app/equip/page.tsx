@@ -49,7 +49,7 @@ export default function Home() {
           </a>
         </div>
 
-        <p className={`text-2xl font-semibold head-line`}>
+        <p className={`text-2xl text-black font-semibold head-line`}>
           Reputation Score: <span a-key="score">{reputationScore}</span>
         </p>
 
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
           </div>
           :
-          <div className="items-right">
+          <div className="items-right catalog">
             <h1 className={`mb-5 mt-24 text-2xl font-semibold head-line`}>
               Equip your shelf!
             </h1>
