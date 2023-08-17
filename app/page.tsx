@@ -35,7 +35,7 @@ export default function Home() {
       <h1 className={`mb-5 mt-32 text-2xl font-semibold head-line`}>
         Say hi to the governance <br />engagement
       </h1>
-      <p className="mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+      <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
         The Shelf is a global protocol that allows DAOs to track reputation
       </p>
 

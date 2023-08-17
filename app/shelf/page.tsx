@@ -52,7 +52,7 @@ export default function Home() {
               Mint your shelf to<br />equip your reputation
             </h1>
 
-            <p className="mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               This NFT is a soulbound token, that is,<br />it is non-transferable, along with its items
             </p>
 
@@ -66,7 +66,7 @@ export default function Home() {
               Congrats!
             </h1>
 
-            <p className="mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               Now you're a shelf owner, equip your reputation<br />by participating in the web3 ecosystem
             </p>
 

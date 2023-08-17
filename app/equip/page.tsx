@@ -47,7 +47,7 @@ export default function Home() {
               Mint your shelf to<br />equip your reputation
             </h1>
 
-            <p className="mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               You don't have a shelf yet,<br/>mint a shelf before trying to equip items
             </p>
 
@@ -63,7 +63,7 @@ export default function Home() {
               Equip your shelf!
             </h1>
 
-            <p className="mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               Click the components to put them on the shelf.<br />Each Shelf has 12 slots
             </p>
           </div>
