@@ -17,6 +17,54 @@ h1.head-line {
   line-height: 1;
 }
 
+.equipped-position-0 {
+  position: absolute;
+  left: 270px;
+  top: 260px;
+}
+
+.equipped-position-1 {
+  position: absolute;
+  left: 340px;
+  top: 260px;
+}
+
+.equipped-position-2 {
+  position: absolute;
+  left: 410px;
+  top: 260px;
+}
+
+.equipped-position-3 {
+  position: absolute;
+  left: 480px;
+  top: 260px;
+}
+
+.equipped-position-4 {
+  position: absolute;
+  left: 270px;
+  top: 350px;
+}
+
+.equipped-position-5 {
+  position: absolute;
+  left: 340px;
+  top: 350px;
+}
+
+.equipped-position-6 {
+  position: absolute;
+  left: 410px;
+  top: 350px;
+}
+
+.equipped-position-7 {
+  position: absolute;
+  left: 480px;
+  top: 350px;
+}
+
 .custom > button {
   background-color: #D33C23
 }

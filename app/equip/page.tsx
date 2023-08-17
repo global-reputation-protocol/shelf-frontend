@@ -7,6 +7,26 @@ import { useState } from 'react'
 
 export default function Home() {
   const [hasShelf, setHasShelf] = useState(true)
+  const [reputationScore, setReputationScore] = useState(0)
+
+  const items = [
+    "aave1.svg", "aave2.svg", "aave3.svg", "aave4.svg",
+    "lens1.svg", "lens2.svg", "lens3.svg", "gho.svg"
+  ]
+
+  const handleEquipItem = (item: any) => {
+    const key = item.currentTarget.getAttribute('a-key')
+
+    if (item.currentTarget.classList.value.includes("equipped")) {
+      item.currentTarget.classList.remove(`equipped`)
+      item.currentTarget.classList.remove(`equipped-position-${key}`)
+    } else {
+      item.currentTarget.classList.add(`equipped`)
+      item.currentTarget.classList.add(`equipped-position-${key}`)
+    }
+
+    setReputationScore(document.querySelectorAll('.equipped').length)
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-right justify-left px-48 py-36">
@@ -29,6 +49,10 @@ export default function Home() {
           </a>
         </div>
 
+        <p className={`text-2xl font-semibold head-line`}>
+          Reputation Score: <span a-key="score">{reputationScore}</span>
+        </p>
+
         <Web3Button />
       </div>
 
@@ -36,7 +60,7 @@ export default function Home() {
         <Image
           src="/shelf.svg"
           alt="The Shelf Asset"
-          className="dark p-20"
+          className="dark p-20 mr-52"
           width={426}
           height={450}
         />
@@ -59,13 +83,28 @@ export default function Home() {
           </div>
           :
           <div className="items-right">
-            <h1 className={`mb-5 mt-32 text-2xl font-semibold head-line`}>
+            <h1 className={`mb-5 mt-24 text-2xl font-semibold head-line`}>
               Equip your shelf!
             </h1>
 
             <p className="text-black mb-5 text-1xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               Click the components to put them on the shelf.<br />Each Shelf has 12 slots
             </p>
+
+            <div className="item-gallery flex-wrap" style={{width: "100%"}}>
+              {items.map((item, key) =>
+                <Image
+                  src={`/items/${item}`}
+                  alt=""
+                  key={key}
+                  onClick={handleEquipItem}
+                  className="dark inline ml-2"
+                  a-key={key}
+                  width={75}
+                  height={75}
+                />
+              )}
+            </div>
           </div>
         }
       </div>
