@@ -3,11 +3,6 @@
 import { Web3Button } from '@web3modal/react'
 import Image from 'next/image'
 
-const handleOnSubmit = (e: { preventDefault: () => void }) => {
-  e.preventDefault()
-  alert('Chama o contratinho do pai')
-}
-
 const redirectGithub = () => {
   window.open("https://github.com/global-reputation-protocol/the-shelf")
 }
@@ -19,8 +14,7 @@ export default function Home() {
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://instagram.com/danimim"
-            target="_blank"
+            href="/"
             rel="noopener noreferrer"
           >
 
@@ -46,7 +40,9 @@ export default function Home() {
       </p>
 
       <div>
-        <button onClick={handleOnSubmit} className="bg-[#91CDE5] text-white py-2 px-4 font-semibold rounded focus:outline-none focus:shadow-outline">Mint Shelf</button>
+        <a href="/shelf">
+          <button className="bg-[#91CDE5] text-white py-2 px-4 font-semibold rounded focus:outline-none focus:shadow-outline">Mint Shelf</button>
+        </a>
         <button onClick={redirectGithub} className="bg-[#F3D100] ml-2 text-white py-2 px-4 font-semibold rounded focus:outline-none focus:shadow-outline">Github</button>
       </div>
     </main>
