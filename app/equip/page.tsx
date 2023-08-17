@@ -49,9 +49,9 @@ export default function Home() {
           </a>
         </div>
 
-        <h1 className={`text-1xl font-semibold head-line`}>
+        <p className={`text-2xl font-semibold head-line`}>
           Reputation Score: <span a-key="score">{reputationScore}</span>
-        </h1>
+        </p>
 
         <Web3Button />
       </div>
