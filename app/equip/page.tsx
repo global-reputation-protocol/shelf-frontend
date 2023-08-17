@@ -49,7 +49,7 @@ export default function Home() {
           </a>
         </div>
 
-        <p className={`text-2xl font-semibold head-line`}>
+        <p className={`text-2xl text-black font-semibold head-line`}>
           Reputation Score: <span a-key="score">{reputationScore}</span>
         </p>
 
