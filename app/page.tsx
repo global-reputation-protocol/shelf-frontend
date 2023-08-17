@@ -29,7 +29,7 @@ export default function Home() {
           </a>
         </div>
 
-        <Web3Button className="custom" />
+        <Web3Button />
       </div>
 
       <h1 className={`mb-5 mt-32 text-2xl font-semibold head-line`}>

@@ -29,7 +29,7 @@ export default function Home() {
           </a>
         </div>
 
-        <Web3Button className="custom" />
+        <Web3Button />
       </div>
 
       <div className="z-10 w-full items-right justify-between font-mono text-sm lg:flex">
