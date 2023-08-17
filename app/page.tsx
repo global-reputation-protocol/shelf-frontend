@@ -27,8 +27,8 @@ export default function Home() {
         </div>
       <Web3Button />
       </div>
-      <h1 className={`mb-32 mt-32 text-2xl font-semibold`}>
-            Say hi to the governance engagement
+      <h1 className={`mb-32 mt-32 text-2xl font-semibold head-line`}>
+            Say hi to the governance <br />engagement
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
           </h1>
