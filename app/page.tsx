@@ -1,9 +1,12 @@
+"use client"
+
+import { Web3Button } from '@web3modal/react'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-left justify-left p-24">
-      <div className="z-10 max-w-5xl w-full items-left justify-between font-mono text-sm lg:flex">
+      <div className="z-10 w-full items-left justify-between font-mono text-sm lg:flex">
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -22,8 +25,9 @@ export default function Home() {
             />
           </a>
         </div>
+      <Web3Button />
       </div>
-      <h1 className={`mb-3 text-2xl font-semibold`}>
+      <h1 className={`mb-32 mt-32 text-2xl font-semibold`}>
             Say hi to the governance engagement
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             </span>
